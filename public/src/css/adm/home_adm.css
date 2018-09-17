@@ -1,0 +1,117 @@
+#contentSection {
+	background: linear-gradient(to right, rgb(0, 0, 0), rgb(50, 50, 50));
+	box-sizing: border-box;
+	padding: 20px;
+}
+
+a {
+	cursor: pointer;
+}
+
+h1 {
+	color: white;
+	text-align: center;
+}
+
+#logoutButton {
+	box-sizing: border-box;
+	text-decoration: none;
+	background: white;
+	text-align: center;
+	border-radius: 20px;
+	padding: 10px 30px;
+	color: black;
+}
+
+#logoutButton:visited{
+	color: black;
+}
+
+button h3 {
+	color: black;
+}
+
+.image{
+	width: 100px;
+	height: 100px;
+}
+
+.admView{
+	box-sizing: border-box;
+	background-color: white;
+	border: 4px solid black;
+	border-radius: 20px;
+	text-align: center;
+	float: left;
+	padding: 10px;
+}
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#contentSection{
+		height: 80%;
+		width: 100%;
+		min-height: 500px;
+	}
+	h1{ font-size: 100%; } 
+	h3{ font-size: 100%; } 
+	.admView{
+		margin-top: 5%;
+		width: 25%;
+	}
+	#logoutButton{
+		margin-left: 85%;
+	}
+}
+
+/* SCREEN 2 */
+@media screen and (min-width: 550px) and (max-width: 849px){
+	#contentSection{
+		height: 80%;
+		width: 100%;
+		min-height: 500px;
+	}
+	h1{ font-size: 100%; }
+	.admView{
+		margin-top: 5%;
+		width: 50%;
+	}
+	#logoutButton{
+		margin-left: 80%;
+	}
+}
+
+/* SCREEN 3 */
+@media screen and (min-width: 440px) and (max-width: 549px){
+	#contentSection{
+		height: 80%;
+		width: 100%;
+		min-height: 500px;
+	}
+	h1{ font-size: 100%; }
+	.admView{
+		margin-top: 5%;
+		width: 50%;
+	}
+	#logoutButton{
+		margin-left: 80%;
+	}
+}
+
+/* SCREEN 4 */
+@media screen and (max-width: 439px){
+	#contentSection{
+		height: 80%;
+		width: 100%;
+		min-height: 500px;
+	}
+	h1{ font-size: 100%; }
+	.admView{
+		margin-top: 15%;
+		width: 50%;
+	}
+	#logoutButton{
+		margin-left: 80%;
+		padding: 10px;
+	}
+}

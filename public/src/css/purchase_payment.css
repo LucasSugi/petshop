@@ -1,0 +1,181 @@
+#contentSection {
+	height: auto;
+	min-height: 90%;
+	text-align: center;
+}
+
+#paymentFormDiv, #purchaseSummaryDiv, #deliveryDiv {
+	background: linear-gradient(rgb(254, 108, 186), rgb(168, 69, 122));
+	box-sizing: border-box;
+	padding: 10px 5px;
+	border: 2px solid rgb(168, 69, 122);
+	border-radius: 20px;
+	text-align: center;
+}
+
+#paymentFormDiv { height: 30%; }
+
+#deliveryDiv {
+	height: auto;
+}
+
+#purchaseSummaryDiv { 
+	height: auto;
+	min-height: 30%; 
+}
+
+#deliveryForm {
+	box-sizing: border-box;
+	padding: 5px 15px;
+	text-align: left;
+}
+
+#deliveryForm input[type=text] {
+	box-sizing: border-box;
+	width: 97%;
+}
+
+#deliveryForm label {
+	display: inline-block;
+	width: 100%;
+}
+
+#requiredMessage {
+	font-size: 60%;
+	text-align: right;
+}
+
+#paymentForm input[type=number], #deliveryForm input, #deliveryForm button {
+	padding: 5px 5px;
+	font-family: 'Comfortaa';
+	font-size: 75%;
+}
+
+#paymentForm button {
+	height: 40px;
+	width: 80px;
+	margin: 5px 5px 10px;
+	padding: 5px 5px;
+	font-family: 'Comfortaa';
+	font-size: 70%;
+}
+
+button img {
+	height: 100%;
+	width: 100%;
+}
+
+#contentSection h2 {
+	margin-top: 15px;
+	color: rgb(168, 69, 122);
+}
+
+#contentSection table {
+	width: 95%;
+	background-color: rgba(255,255,255,0.1);
+	margin: 5px 2.5%;
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+
+#contentSection tr:nth-child(even) { background-color: rgba(255,255,255,0.2); }
+
+#subtotalMessage {
+	font-weight: 100;
+	color: black !important;
+}
+
+#contentSection > button, #deliveryForm button {
+	background-color: #000000;
+	display: inline-block;
+	box-sizing: border-box;
+	margin-bottom: 10px;
+	padding: 8px 10px;
+	border: none;
+	border-radius: 20px;
+	font-size: 80%;
+	color: white;
+	text-decoration: none;
+	cursor: pointer;
+	font-family: 'Comfortaa';
+	transition-duration: 0.4s;
+}
+
+#contentSection > button:hover {
+ 	background-color: rgb(168, 69, 122);
+	color: white;
+}
+
+#deliveryForm button:hover {
+	background-color: white;
+	color: rgb(168, 69, 122);
+}
+
+.valueSpan { font-weight: 700; }
+
+.red { color: rgba(255, 0, 0, 0.7); }
+
+.lesserField {
+	width: 46% !important;
+}
+
+.lesserFieldMargin { margin-right: 4% !important; }
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#contentSection { min-height: 470px; }
+	#paymentFormDiv, #purchaseSummaryDiv, #deliveryDiv { width: 80%; }
+	#paymentFormDiv, #deliveryDiv {
+		min-height: 160px;
+		margin: 10px 10% 0px;
+	}
+	#paymentForm, #deliveryForm { font-size: 70%; }
+	#paymentForm input[type=number], #deliveryForm input[type=text] { margin: 5px 5px 10px; }
+	#deliveryForm button { width: 35%; }
+	#cardNumber { width: 50%; }
+	#purchaseSummaryDiv { margin: 10px 10% 20px; }
+	#contentSection h2 { font-size: 80%; }
+	#contentSection table { font-size: 70%; }
+	#contentSection th { height: 40px; }
+	#contentSection td { height: 30px; }
+	#contentSection > button { width: 20%; }
+}
+
+/* SCREEN 2 */
+@media screen and (max-width: 849px){
+	#contentSection { min-height: 400px; }
+	#paymentFormDiv, #purchaseSummaryDiv, #deliveryDiv { width: 90%; }
+	#paymentFormDiv, #deliveryDiv {
+		min-height: 140px;
+		margin: 10px 5% 0px;
+	}
+	#paymentForm, #deliveryForm { font-size: 70%; }
+	#paymentForm input[type=number], #deliveryForm input[type=text] { margin: 5px 2px 10px; }
+	#deliveryForm button { width: 40%; }
+	#cardNumber { width: 50%; }
+	#purchaseSummaryDiv { margin: 10px 5% 20px; }
+	#contentSection table { font-size: 70%; }
+	#contentSection th { height: 30px; }
+	#contentSection td { height: 20px; }
+	#contentSection h2 { font-size: 80%; }
+	#contentSection > button { width: 25%; }
+}
+
+/* SCREEN 3 */
+@media screen and (max-width: 549px){
+	#contentSection { min-height: 450px; }
+	#paymentForm { font-size: 80%; }
+	#cardNumber { width: 40%; }
+	#contentSection h2 { font-size: 90%; }
+	#contentSection > button { width: 35%; }
+	#confirmPayment {
+		width: 70% !important;
+		margin-top: 10px;
+	}
+	#contentSection table { font-size: 75%; }
+}
+
+/* SCREEN 4 */
+@media screen and (max-width: 439px){
+	#cardNumber { width: 30%; }	
+}

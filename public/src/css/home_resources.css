@@ -1,0 +1,85 @@
+#contentSection { min-height: 420px; }
+
+#contentSection section {
+	height: 50%;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+#servicesSection { background: linear-gradient(rgb(1, 170, 254), rgb(0, 103, 155)); }
+
+#productsSection { background: linear-gradient(rgb(254, 108, 186), rgb(168, 69, 122)); }
+
+.generalDiv {
+	height: 80%;
+	width: 90%;
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+.elementDiv {
+	height: 100%;
+	box-sizing: border-box;
+	padding: 10px;
+	float: left;
+	text-align: center;
+}
+
+.postImage {
+	background-color: white;
+	padding: 5px 18px;
+	border: 4px solid black;
+	border-radius: 20px;
+}
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#contentSection { height: 80%; }
+	#contentSection h1 { font-size: 100%; }
+	#contentSection h3 { font-size: 60%; }
+	.elementDiv { width: 25%; }
+	.postImage {
+		height: 100px;
+		width: 100px;
+	}
+}
+
+/* SCREEN 2 */
+@media screen and (min-width: 550px) and (max-width: 849px){
+	#contentSection { height: 80%; }
+	#contentSection h1 { font-size: 103%; }
+	#contentSection h3 { font-size: 80%; }
+	.elementDiv { width: 33%; }
+	.postImage {
+		height: 100px;
+		width: 100px;
+	}
+	.hidden1 { display: none; }
+}
+
+/* SCREEN 3 */
+@media screen and (min-width: 440px) and (max-width: 549px){
+	#contentSection { height: 70%; }
+	#contentSection h1 { font-size: 120%; }
+	#contentSection h3 { font-size: 90%; }
+	.elementDiv { width: 50%; }
+	.postImage {
+		height: 80px;
+		width: 80px;
+	}
+	.hidden1, .hidden2 { display: none; }
+}
+
+/* SCREEN 4 */
+@media screen and (max-width: 439px){
+	#contentSection { height: 60%; }
+	#contentSection h1 { font-size: 110%; }
+	#contentSection h3 { font-size: 90%; }
+	.elementDiv { width: 50%; }
+	.postImage {
+		height: 64px;
+		width: 64px;
+	}
+	.hidden1, .hidden2 { display: none; }
+}

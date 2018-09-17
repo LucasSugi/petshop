@@ -1,0 +1,178 @@
+/*************************************************
+				LINK NEW
+**************************************************/
+#newServiceSection {
+	height: 8%;
+	min-height: 50px;
+	width: 100%;
+	background: linear-gradient(to right, #a5a5a5 0%,#f5f5f5 50%,#a5a5a5 100%);
+	text-align: center;
+}
+
+#newServiceButton {
+	height: 80%;
+ 	background-color: #000000;
+	display: inline-block;
+	border-radius: 20px;
+	box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-family: 'Comfortaa';
+	text-decoration: none;
+	transition-duration: 0.4s;
+}
+
+#newServiceButton:hover {
+ 	background-color: rgb(0, 103, 155);
+	color: white;
+}
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#newServiceSection { padding-top: 25px; }
+	#newServiceButton {
+	 	width: 30%;
+	 	padding: 8px 5px;
+		font-size: 80%;
+	}
+}
+
+/* SCREEN 2 */
+@media screen and (max-width: 849px){
+	#newServiceSection { padding-top: 15px; }
+	#newServiceButton {
+	 	width: 40%;
+	 	padding: 10px 5px;
+		font-size: 90%;
+	}
+}
+
+/* SCREEN 3 */
+@media screen and (max-width: 549px){
+	#newServiceButton {
+	 	width: 50%;
+		font-size: 120%;
+	}
+}
+
+/* SCREEN 4 */
+@media screen and (max-width: 439px){
+	#newServiceButton {
+	 	padding: 11px 5px;
+		font-size: 100%;
+	}
+}
+
+/*************************************************
+				SECAO CONTEUDO
+**************************************************/
+#contentSection { background: linear-gradient(to right, #a5a5a5 0%,#f5f5f5 50%,#a5a5a5 100%); }
+
+#contentSection table {
+	width: 95%;
+	background-color: rgba(255,255,255,0.1);
+	margin: 20px 2.5%;
+	box-sizing: border-box;
+	border-collapse: collapse;
+}
+
+#contentSection tr:nth-child(even) { background-color: rgba(255,255,255,0.2); }
+
+#contentSection th { height: 40px; }
+
+#contentSection td { height: 30px; }
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#contentSection {
+		height: auto;
+		min-height: 420px;
+	}
+	#contentSection h1, #contentSection div { margin: 10px 2.5% 0px; }
+	#contentSection h1 { font-size: 70%;}
+	#contentSection table { font-size: 50%; }
+	#servicesResumeSection div {
+		background: linear-gradient(rgb(1, 170, 254), rgb(0, 103, 155));
+		border: 2px solid rgb(0, 103, 155);
+		margin-left: 7.5%;
+	}
+	#servicesHistorySection div {
+		background: linear-gradient(rgb(1, 170, 254), rgb(0, 103, 155));
+		border: 2px solid rgb(0, 103, 155);
+		margin-right: 7.5%;
+	}
+	#servicesResumeSection h1 {
+		color: rgb(0, 103, 155);
+		margin-left: 7.5%;
+	}
+	#servicesHistorySection h1 {
+		color: rgb(0, 103, 155);
+		margin-right: 7.5%;
+	}
+	.resumeSection {
+		height: 100%;
+		width: 50%;
+		float: left;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.resumeDiv {
+		height: 75%;
+		width: 90%;
+		box-sizing: border-box;
+		border-radius: 20px;
+	}
+}
+
+/* SCREEN 2 */
+@media screen and (max-width: 849px){
+	#contentSection {
+		height: auto;
+		min-height: 620px;
+	}
+	#contentSection h1, #contentSection div { margin: 10px 10%; }
+	#contentSection h1 { font-size: 90%; }
+	#contentSection table { font-size: 75%; }
+	#servicesHistorySection { padding-top: 0px; }
+	#servicesResumeSection div {
+		background: linear-gradient(rgb(1, 170, 254), rgb(0, 103, 155));
+		border: 2px solid rgb(0, 103, 155);
+	}
+	#servicesHistorySection div {
+		background: linear-gradient(rgb(1, 170, 254), rgb(0, 103, 155));
+		border: 2px solid rgb(0, 103, 155);
+	}
+	#servicesResumeSection h1 { color: rgb(0, 103, 155); }
+	#servicesHistorySection h1 { color: rgb(0, 103, 155); }
+	.resumeSection {
+		height: 50%;
+		width: 100%;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	.resumeDiv {
+		height: 85%;
+		width: 80%;
+		box-sizing: border-box;
+		border-radius: 20px;
+	}
+}
+
+/* SCREEN 3 */
+@media screen and (max-width: 549px){
+	#contentSection h1, #contentSection div { margin: 10px 5%; }
+	#contentSection h1 { font-size: 120%; }
+	#contentSection table { font-size: 100%; }
+	.resumeDiv {
+		height: 85%;
+		width: 90%;
+		box-sizing: border-box;
+		border-radius: 20px;
+	}
+}
+
+/* SCREEN 4 */
+@media screen and (max-width: 439px){
+	#contentSection h1 { font-size: 100%; }
+	#contentSection table { font-size: 80%; }
+}

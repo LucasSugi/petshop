@@ -1,0 +1,23 @@
+<h1>EDITAR ANIMAL</h1>
+<form id="newUserForm">
+    <label id="textPicture">Foto<span class="red">*</span></label>
+    <img id="animalImage" alt="Foto do Animal" src="./src/images/animals/white.jpg" />	
+    <br>
+    
+    <input type="file" name="arquivo" id="arquivo" class="arquivo">
+    <input type="text" name="file" id="animalImageFile" class="file" placeholder="Arquivo" readonly="readonly"><br>
+    <input type="button" class="btn" value="SELECIONAR" id="animalImageInput">
+    
+    <label for="animalName">Nome <span class="red">*</span></label>
+    <input type="text" id="animalName" value="" autofocus required/>
+                    
+    <label for="animalBreed" class="lesserField lesserFieldMargin">Raça <span class="red">*</span></label>
+    <label for="animalAge" class="lesserField">Idade <span class="red">*</span></label>
+    <input type="text" id="animalBreed" class="lesserField lesserFieldMargin" value="" required/>
+    <input type="text" id="animalAge" class="lesserField" value="" required/>
+    
+    <h3 id="requiredMessage">Os campos marcados com <span class="red">*</span> são obrigatórios</h3>
+    <button id='registerButton' type="submit">CONFIRMAR</button>
+    <h3 id="registeredMessage">Desistiu de editar?</h3>
+    <button id="returnButton">VOLTAR</button>
+</form>

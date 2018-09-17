@@ -1,0 +1,40 @@
+<h1>NOVO USUÁRIO</h1>
+<form id="newUserForm">
+    <label for="userEmail">Email <span class="red">*</span></label>
+    <input type="email" id="userEmail" autofocus required/>
+    
+    <label for="userPassword" class="lesserField lesserFieldMargin">Senha <span class="red">*</span></label>
+    <label for="userPasswordConfirm" class="lesserField">Confirme a Senha <span class="red">*</span></label>
+    
+    <input type="password" id="userPassword" class="lesserField lesserFieldMargin" required/>
+    <input type="password" id="userPasswordConfirm" class="lesserField" required/>
+    
+    <label for="userName">Nome <span class="red">*</span></label>
+    <input type="text" id="userName" required/>
+    
+    <label for="userCPF" class="lesserField lesserFieldMargin" >CPF <span class="red">*</span></label>
+    <label for="userPhone" class="lesserField">Telefone <span class="red">*</span></label>
+    
+    <input type="text" id="userCPF" class="lesserField lesserFieldMargin" required/>
+    <input type="tel" id="userPhone" class="lesserField" required/>
+
+    <label for="userAddress">Endereço <span class="red">*</span></label>
+    <input type="text" id="userAddress" required/>
+    
+    <label for="userAddressDistrict" class="lesserField lesserFieldMargin">Bairro</label>
+    <label for="userAddressCity" class="lesserField">Cidade <span class="red">*</span></label>
+    
+    <input type="text" id="userAddressDistrict" class="lesserField lesserFieldMargin"/>	
+    <input type="text" id="userAddressCity" class="lesserField" required/>
+
+    <label for="userAddressState" class="lesserField lesserFieldMargin">Estado <span class="red">*</span></label>
+    <label for="userAddressCountry" class="lesserField">País <span class="red">*</span></label>
+    
+    <input type="text" id="userAddressState" class="lesserField lesserFieldMargin" required/>				
+    <input type="text" id="userAddressCountry" class="lesserField" required/>
+    <h3 id="requiredMessage">Os campos marcados com <span class="red">*</span> são obrigatórios</h3>
+    <input type="checkbox" id="userAdmCheck" name="userAdm" value="userAdm"><span id="admSpan">Tornar Administrador?</span><br><br>
+    <input type="submit" value="CADASTRAR" id="registerButton" />
+    <h3 id="registeredMessage">Já tem cadastro?</h3>
+    <a id="returnButton">VOLTAR</a>
+</form>

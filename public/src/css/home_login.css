@@ -1,0 +1,125 @@
+#loginSection { width: 100%; }
+
+#loginSection section {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+#loginSection h2, input { font-family: 'Comfortaa'; }
+
+#loginSection input {
+	font-size: 70%;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	margin-top: 10px;
+}
+
+#loginSection input { width: 95%; }
+
+#loginSection input[type=submit], #newUserButton {
+ 	width: 70%;
+	background-color: #000000;
+	color: white;
+	font-family: 'Comfortaa';
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+#loginSection input[type=submit]:hover, #newUserButton:hover {
+ 	background-color: rgb(215, 255, 181);
+	color: rgb(0, 105, 33);
+}
+
+#forgotUserPassButton {
+	background-color: rgba(0,0,0,0);
+	border: none;
+	font-family: 'Comfortaa';
+	cursor: pointer;
+	color: white;
+	text-decoration: none;
+}
+
+#newUserButton {
+	width: 80%;
+	min-width: 250px;
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+	padding: 8px 10px;
+	margin-top: 10px;
+}
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#loginSection {
+		height: 250px;
+		background: linear-gradient(to right, rgb(1, 254, 102), rgb(0, 135, 53));
+	}
+	#loginSection section {
+		height: 100%;
+		margin: 0 5%;
+		float: left;
+	}
+	#loginSection h2 { font-size: 80%; }
+	#loginSection input, #newUserButton { font-size: 70%; }
+	#registeredSection {
+		padding: 20px 10px;
+		width: 50%;
+	}
+	#forgotUserPassButton { font-size: 50%; }
+	#newUserSection {
+		padding: 80px 0px;
+		width: 30%;
+	}
+}
+
+/* SCREEN 2 */
+@media screen and (min-width: 550px) and (max-width: 849px){	
+	#loginSection {
+		height: 50%;
+		min-height: 370px;
+		background: linear-gradient(rgb(1, 254, 102), rgb(0, 135, 53));
+	}
+	#loginSection section {
+		width: 80%;
+		margin: 0 10%;
+		padding: 20px 10px;
+		float: none;
+	}
+	#loginSection h2 { font-size: 100%; }
+	#loginSection input, #newUserButton { font-size: 90%; }
+	#registeredSection {
+		height: 60%;
+		border-bottom: 2px solid black;
+	}
+	#forgotUserPassButton { font-size: 65%; }
+	#newUserSection { height: 40%; }
+}
+
+/* SCREEN 3 e 4 */
+@media screen and (max-width: 549px){
+	#loginSection {
+		height: 50%;
+		min-height: 340px;
+		background: linear-gradient(rgb(1, 254, 102), rgb(0, 135, 53));
+	}
+	#loginSection section {
+		width: 80%;
+		margin: 0 auto;
+		padding: 20px 10px;
+		float: none;
+	}
+	#loginSection h2 { font-size: 120%; }
+	#loginSection input, #newUserButton { font-size: 100%; }
+	#registeredSection {
+		height: 60%;
+		border-bottom: 2px solid black;
+	}
+	#forgotUserPassButton { 
+		font-size: 60%; 
+		
+	}
+	#newUserSection { height: 40%; }
+}

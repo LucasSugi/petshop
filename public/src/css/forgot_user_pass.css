@@ -1,0 +1,112 @@
+#contentSection {
+	height: auto;
+	background: linear-gradient(to right, rgb(1, 254, 102), rgb(0, 135, 53));
+	color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	box-sizing: border-box;
+}
+
+#contentSection form {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+#contentSection label, input, #returnButton {
+	font-family: 'Comfortaa';
+	box-sizing: border-box;
+	padding: 8px 10px;
+	width: 100%;
+}
+
+#contentSection label {
+	display: inline-block;
+	margin-top: 5px;
+	text-align: left;
+}
+
+#contentSection input {
+	color: rgb(0, 105, 33);
+	border: 1px solid rgb(0, 105, 33);
+	border-radius: 12px;
+}
+
+#contentSection input:focus {
+	border: 1px solid gray;
+	outline: none;
+}
+
+#contentSection input[type=submit], #returnButton {
+	width: 50%;
+ 	background-color: #000000;
+	color: white;
+	margin-top: 20px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+#contentSection input[type=submit]:hover, #returnButton:hover {
+ 	background-color: rgb(215, 255, 181);
+	color: rgb(0, 105, 33);
+}
+
+#contentSection h3 {
+	display: inline-block;
+	width: 100%;
+	margin-top: 20px;
+}
+
+#returnButton {
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+	padding: 8px 10px;
+}
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#contentSection { 
+		min-height: 80%;
+		padding: 25px;
+	}
+	#contentSection form {
+		width: 70%;
+		min-width: 600px;
+		padding: 0px 10px;
+	}
+	#contentSection h1 { font-size: 120%; }
+	#contentSection h3 { font-size: 50%; }
+	#contentSection label, input, #returnButton { font-size: 75%; }
+}
+
+/* SCREEN 2 */
+@media screen and (min-width: 550px) and (max-width: 849px){
+	#contentSection { 
+		min-height: 65%;
+		padding: 25px;
+	}
+	#contentSection form {
+		width: 80%;
+		padding: 0px 10px;
+	}		
+	#contentSection h1 { font-size: 120%; }
+	#contentSection h3 { font-size: 60%; }
+	#contentSection label, input, #returnButton { font-size: 75%; }
+}
+
+/* SCREEN 3 e 4 */
+@media screen and (max-width: 549px){
+	#contentSection { 
+		min-height: 65%;
+		padding: 15px 5px; 
+	}
+	#contentSection form {
+		width: 90%;
+		padding: 0px 5px;
+	}
+	#contentSection h1 { font-size: 135%; }
+	#contentSection h3 { font-size: 70%; }
+	#contentSection label, input, #returnButton { font-size: 90%; }
+}
+

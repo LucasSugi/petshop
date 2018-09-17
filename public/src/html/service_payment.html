@@ -1,0 +1,30 @@
+<h2>Selecione a forma de pagamento</h2>
+<div id="paymentFormDiv">
+    <form id="paymentForm">
+        <input type="radio" name="payment" value="credit" id="credit"checked autofocus/> Cartão de Crédito<br>
+        <input type="number" id="cardNumber" placeholder="Número do Cartão" required />
+        <input type="number" id="cardMonth" placeholder="Mês" min="1" max="12" required />
+        <input type="number" id="cardYear" placeholder="Ano" min="18" max="30" required/>
+        <input type="number" id="cardCVV" placeholder="CVV" min="001" max="999" required/><br>
+        <input type="radio" name="payment" value="cash" id="cash"/> Boleto Bancário<br>
+        <button type="button" id="barcodeButton" value="Gerar boleto"><img alt="Boleto" src="./src/images/barcode.png"></button>
+    </form>
+</div>
+<h2>Resumo do pedido</h2>
+<div id="serviceSummaryDiv">
+    <table id="serviceSummaryTable">
+        <tr id="servicesSummaryTableHeader">
+            <th style="width: 12%;">Data</th>
+            <th style="width: 12%;">Hora</th>
+            <th style="width: 26%;">Animal</th>
+            <th style="width: 30%;">Serviço</th>
+            <th style="width: 20%;">Valor</th>
+        </tr>
+        <tr id="servicesSummaryTableRow1">
+        </tr>
+    </table>
+    <h2 id="subtotalMessage">Subtotal: <span id="serviceTotalValue" class="valueSpan"></span></h2>
+</div>
+<button id="returnButton">Cancelar</button>
+<button id="editButton">Editar</button>
+<button id="confirmButton">Confirmar</button>

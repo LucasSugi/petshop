@@ -1,0 +1,18 @@
+<h1>Novo Agendamento</h1>
+<form id="schedulingForm">
+    <label for="scheduleDate">Data <span class="red">*</span></label>
+    <input type="date" name="scheduleDate" id="scheduleDate"/><br class="second" />
+    <label for="scheduleTime" style="margin-left: 10px;">Horário <span class="red">*</span></label>
+    <select id="scheduleTime">
+    </select><br>
+    <label class="desiredLabel" for="desiredPet">Animal <span class="red">*</span></label>
+    <select id="desiredPet">
+    </select><br>
+    <label class="desiredLabel" for="desiredService">Serviço Solicitado <span class="red">*</span></label>
+    <select id="desiredService">
+    </select>
+    <h3 id="requiredMessage">Os campos marcados com <span class="red">*</span> são obrigatórios</h3>
+    <h3 id="subtotalMessage">Subtotal: <span id="serviceTotalValue" class="valueSpan"></span></h3>
+    <button id="returnButton" class="serviceButton">Cancelar</button>
+    <button id="confirmButton" class="serviceButton">Agendar</button>
+</form>

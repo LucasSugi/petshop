@@ -1,0 +1,50 @@
+footer {
+	height: 100px;
+	width: 100%;
+	background: linear-gradient(rgb(20, 20, 20), black);
+	text-align: center;
+}
+
+footer h2 {
+	font-family: 'Comfortaa';
+	color: white;
+}
+
+#socialDiv {
+	height: 100px;
+	box-sizing: border-box;
+	padding: 15px;
+}
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	footer h2 {
+		font-size: 75%;
+		padding-bottom: 5px;
+	}
+	.socialLink {
+		height: 35px;
+		width: 35px;
+	}	
+}
+
+/* SCREEN 2 */
+@media screen and (max-width: 849px){	
+	footer h2 { font-size: 100%; }
+	.socialLink {
+		height: 32px;
+		width: 32px;
+	}
+}
+
+/* SCREEN 3 e 4 */
+@media screen and (max-width: 549px){
+	footer h2 {
+		font-size: 120%;
+		padding-bottom: 8px;
+	}
+	.socialLink {
+		height: 30px;
+		width: 30px;
+	}
+}

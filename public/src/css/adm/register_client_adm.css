@@ -1,0 +1,135 @@
+#contentSection {
+	background: linear-gradient(to right, rgb(0, 0, 0), rgb(50, 50, 50));
+	color: rgba(0, 0, 0, 0.7);
+	text-align: center;
+	box-sizing: border-box;
+	color: white;
+}
+
+#contentSection form {
+	box-sizing: border-box;
+	margin: 0 auto;
+}
+
+#contentSection label, input, #returnButton {
+	font-family: 'Comfortaa';
+	box-sizing: border-box;
+	padding: 8px 10px;
+	width: 100%;
+}
+
+#contentSection label {
+	display: inline-block;
+	margin-top: 5px;
+	text-align: left;
+}
+
+#contentSection input {
+	color: black;
+	border: 1px solid black;
+	border-radius: 12px;
+}
+
+#contentSection input:focus {
+	border: 1px solid gray;
+	outline: none;
+}
+
+#contentSection input[type=submit], #returnButton {
+	width: 50%;
+ 	background-color: #000000;
+	color: white;
+	margin-top: 10px;
+	border: none;
+	border-radius: 20px;
+	cursor: pointer;
+	transition-duration: 0.4s;
+}
+
+#contentSection input[type=submit]:hover, #returnButton:hover {
+ 	background-color: rgb(255, 255, 0);
+	color: black;
+}
+
+#contentSection h3 {
+	display: inline-block;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#returnButton {
+	display: inline-block;
+	text-decoration: none;
+	box-sizing: border-box;
+	padding: 8px 10px;
+}
+
+#requiredMessage {
+	font-style: italic;
+	margin-bottom: 10px;
+	text-align: right;
+}
+
+input[type=checkbox] {
+	width: auto;
+	float: left;
+	margin-left: 10px;
+	transform: scale(2);
+}
+
+#admSpan {
+	margin-left: 10px;
+	float: left;
+}
+
+.red { color: rgba(255, 0, 0, 0.7); }
+
+.lesserField {
+	width: 48% !important;
+	float: left;
+}
+
+.lesserFieldMargin { margin-right: 4% !important; }
+
+/* SCREEN 1 */
+@media screen and (min-width: 850px){
+	#contentSection { padding: 25px; }
+	#contentSection form {
+		width: 70%;
+		min-width: 600px;
+		padding: 0px 10px;
+	}
+	#contentSection h1 { font-size: 120%; }
+	#contentSection h3, #admSpan { font-size: 60%; }
+	#contentSection label, input, #returnButton { font-size: 75%; }
+}
+
+/* SCREEN 2 */
+@media screen and (min-width: 550px) and (max-width: 849px){
+	#contentSection { padding: 25px; }
+	#contentSection form {
+		width: 80%;
+		padding: 0px 10px;
+	}		
+	#contentSection h1 { font-size: 120%; }
+	#contentSection h3, #admSpan { font-size: 60%; }
+	#contentSection label, input, #returnButton { font-size: 75%; }
+}
+
+/* SCREEN 3 e 4 */
+@media screen and (max-width: 549px){
+	#contentSection { padding: 15px 5px; }
+	#contentSection form {
+		width: 90%;
+		padding: 0px 5px;
+	}
+	#contentSection h1 { font-size: 135%; }
+	#contentSection h3, #admSpan { font-size: 70%; }
+	#contentSection label, input, #returnButton { font-size: 90%; }
+	.lesserField {
+		width: 49% !important;
+		white-space: nowrap;
+	}
+	.lesserFieldMargin { margin-right: 2% !important; }
+}
+
